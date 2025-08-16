@@ -1,0 +1,20 @@
+td {
+  position: relative;
+  cursor: pointer;
+}
+
+.editable-input {
+  width: calc(100% - 10px);
+  min-height: 50px;
+  padding: 5px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.editable-input:focus {
+  outline: none;
+}
