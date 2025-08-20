@@ -13,7 +13,7 @@ import './Cell.css';
       };
 
       const handleKeyDown = (e) => {
-        if (e.key === 'Enter' && !e.shiftKey) { // Prevent new line on Enter
+        if (e.key === 'Enter' && !e.shiftKey) { 
           e.preventDefault();
           handleBlur();
         }

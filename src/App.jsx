@@ -19,14 +19,14 @@ const App = () => {
         const commentsData = await commentsRes.json();
         const postsData = await postsRes.json();
 
-        // mappping
+  
         const postsMap = postsData.reduce((acc, post) => {
           acc[post.id] = post.title;
           return acc;
         }, {});
         setPosts(postsMap);
 
-        // apply saved edits from local storage
+        
         const savedEdits =
           JSON.parse(localStorage.getItem("commentEdits")) || {};
         const commentsWithEdits = commentsData.map((comment) => ({
